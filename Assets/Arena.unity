@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 1800437321}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -756,7 +756,7 @@ PrefabInstance:
         type: 3}
       propertyPath: XROrigin
       value: 
-      objectReference: {fileID: 2233550863633580354, guid: 668d30b42c07fb94c9eeae76f70e8a59,
+      objectReference: {fileID: 6500595218008312984, guid: 4ee1e8ef7b9e5de4f80d8f78a70890c1,
         type: 3}
     - target: {fileID: 3736022095211866993, guid: 0b2a0139a108c8288afd5654b34e5cf7,
         type: 3}

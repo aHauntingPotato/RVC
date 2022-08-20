@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 81082583632390412}
   - component: {fileID: 521380781146801634}
   - component: {fileID: 5667785529639987176}
-  - component: {fileID: 3017571916565291988}
   - component: {fileID: 1305657018726510925}
   - component: {fileID: 491559233433663728}
   - component: {fileID: 8105032441536644389}
   - component: {fileID: -6617903547459438853}
+  - component: {fileID: 4140552956704303946}
   m_Layer: 0
   m_Name: 3DCursor
   m_TagString: Untagged
@@ -76,26 +76,10 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 3017571916565291988}
+  - {fileID: 4140552956704303946}
   viewIdField: 0
   InstantiationId: 7
   isRuntimeInstantiated: 0
---- !u!114 &3017571916565291988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3148796085977064604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters: []
-  m_SynchronizeLayers: []
 --- !u!114 &1305657018726510925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +131,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ddbd5134826ea347b6c6e7e33aa8233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4140552956704303946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3148796085977064604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
 --- !u!1 &6152646931401577473
 GameObject:
   m_ObjectHideFlags: 0

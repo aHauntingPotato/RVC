@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2b1f8d360975fbcbff684618993594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   cameraPositionOffset: {x: 0, y: 1.6, z: 0}
   cameraOrientationOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &873
@@ -84,8 +85,8 @@ MonoBehaviour:
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 873}
-  viewIdField: 5
-  InstantiationId: 5
+  viewIdField: 1
+  InstantiationId: 1
   isRuntimeInstantiated: 0
 --- !u!1 &151
 GameObject:
@@ -232,8 +233,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 877}
   - {fileID: 875}
-  viewIdField: 2
-  InstantiationId: 2
+  viewIdField: 7
+  InstantiationId: 7
   isRuntimeInstantiated: 0
 --- !u!114 &877
 MonoBehaviour:
@@ -320,12 +321,12 @@ PrefabInstance:
     - target: {fileID: 5667785529639987176, guid: 4faa6993bee65714c897d5a71ffc17b4,
         type: 3}
       propertyPath: viewIdField
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5667785529639987176, guid: 4faa6993bee65714c897d5a71ffc17b4,
         type: 3}
       propertyPath: InstantiationId
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4faa6993bee65714c897d5a71ffc17b4, type: 3}

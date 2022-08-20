@@ -32,11 +32,11 @@ namespace WasaaMP {
 
         void Start () {
 
-            Transform t0 = XROrigin.transform.GetChild(0);
+            /*Transform t0 = XROrigin.transform.GetChild(0);
             if(t0 != null) questPrefab = t0.gameObject;
 
             Transform t1 = XROrigin.transform.GetChild(1);
-            if (t1 != null) XRInteractionManager = t1.gameObject;
+            if (t1 != null) XRInteractionManager = t1.gameObject;*/
 
             Instance = this ;
             platformType = SystemInfo.deviceType;
@@ -61,7 +61,7 @@ namespace WasaaMP {
                 else
                 {
                     Debug.Log("xr rig should be camera");
-                    PhotonNetwork.Instantiate(this.XROrigin.name, new Vector3(0f, 0.5f, 0f), Quaternion.identity, 0);
+                    PhotonNetwork.Instantiate(this.XROrigin.name, new Vector3(0f, 1.5f, 0f), Quaternion.identity, 0);
                     
                 }
             }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using WasaaMP;
 
 public class XRCameraManager : MonoBehaviourPunCallbacks
 {
@@ -11,7 +12,19 @@ public class XRCameraManager : MonoBehaviourPunCallbacks
         if (!photonView.IsMine)
         {
 
-            GameObject theCameraRig = GameObject.FindGameObjectWithTag("XR");
+            // récupération du proxy de l'OVRCameraRig, qu'il faut désactiver
+
+            OVRCameraRig theCameraRig = (OVRCameraRig)GameObject.FindObjectOfType(typeof(OVRCameraRig));
+
+            // récupération des outils qui eux doivent continuer à être représentés
+
+            CursorTool ct = (CursorTool)theCameraRig.GetComponentInChildren<CursorTool>();
+
+            // replacement des outils dans une partie active du graphe de scène
+
+            ct.transform.SetParent(theCameraRig.transform.parent);
+
+            // désactivation du proxy de l'OVRCameraRig
 
             theCameraRig.gameObject.SetActive(false);
 

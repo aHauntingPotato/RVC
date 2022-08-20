@@ -6,6 +6,8 @@ using Photon.Pun;
 
 namespace WasaaMP {
     public class Navigation : MonoBehaviourPunCallbacks {
+
+        [SerializeField] Camera camera;
      
         #region Public Fields
 

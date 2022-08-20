@@ -51,4 +51,47 @@ public class CursorColor : MonoBehaviourPunCallbacks
     {
         
     }
+
+    [PunRPC]
+    void SendMeTheColor(PhotonMessageInfo info)
+    {
+        if (photonView.IsMine)
+        {
+            float red = PlayerPrefs.GetFloat("red");
+
+            float green = PlayerPrefs.GetFloat("green");
+
+            float blue = PlayerPrefs.GetFloat("blue");
+
+            Vector3 color = new Vector3(red, green, blue);
+
+            photonView.RPC("SetTheColor", RpcTarget.All, color);
+        }
+    }
+
+    [PunRPC]
+    void SetTheColor(Vector3 color, PhotonMessageInfo info)
+    {
+
+        if (!photonView.IsMine)
+        {
+
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                caught = false;
+
+                float red = color[0];
+
+                float green = color[1];
+
+                float blue = color[2];
+
+                Debug.Log("red float " + red);
+
+                renderers[i].material.color = new Color(red, green, blue);
+            }
+
+
+        }
+    }
 }
